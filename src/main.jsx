@@ -11,7 +11,7 @@ import Notfound from './Notfound'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-  <nav className='navbar'>
+ {/*} <nav className='navbar'>
     <div className='contents'>
       <Link to="/home" className='home'>Home</Link>
     <Link to="/info" className='info'>Info</Link>
@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')).render(
       <Link to="/browse">Browse</Link>
      
       </div>
-  </nav>
+  </nav>*/}
   <Routes>
 
 

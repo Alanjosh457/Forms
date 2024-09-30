@@ -68,18 +68,19 @@ const Home = () => {
   return (
     <div>
         <form className='frm'>
+          <div className='cont'>
        
             <label>Name :</label>
-            <input type='text'name='name'placeholder='Enter name here'value={data.name} onChange={handlein}></input>
+            <input type='text'name='name'placeholder='Enter name here'value={data.name} onChange={handlein} className='inb'></input>
             <span className='error'>{error.name}</span>
             <label>Username :</label>
-            <input type='text'name='username'placeholder='Enter username here' value={data.username} onChange={handlein}></input>
+            <input type='text'name='username'placeholder='Enter username here' value={data.username} onChange={handlein} className='inb'></input>
             <span className='error'>{error.username}</span>
             <label>email :</label>
-            <input type='email'name='email'placeholder='Enter email here' value={data.email} onChange={handlein}></input>
+            <input type='email'name='email'placeholder='Enter email here' value={data.email} onChange={handlein} className='inb'></input>
             <span className='error'>{error.email}</span>
             <label>Mobile :</label>
-            <input type='tel'name='mobile'placeholder='Enter mobile no here' value={data.mobile} onChange={handlein}></input>
+            <input type='tel'name='mobile'placeholder='Enter mobile no here' value={data.mobile} onChange={handlein} className='inb'></input>
             <span className='error'>{error.mobile}</span>
             <div>
             <label htmlFor='checkbox' >Share my registeration data </label> 
@@ -87,7 +88,7 @@ const Home = () => {
        
             </div>
             <span className='error'>{error.checkbox}</span>
-            <button type='submit' onClick={handlesub}>Submit</button>
+            <button type='submit' onClick={handlesub} id='sub'>Submit</button></div>
         </form>
     </div>
   )
